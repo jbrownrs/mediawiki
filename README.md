@@ -6,4 +6,4 @@ When launched, the Mediawiki instance is available at http://localhost:8000/.
 ...
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
