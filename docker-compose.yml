@@ -8,21 +8,28 @@ services:
     image: mediawiki
     restart: always
     ports:
-      - 8000:80
+      - "8000:80"
     links:
       - database
     volumes:
       - /var/www/html/images
+      #- "./mediawiki_data:/var/www/html/images"
       # After initial setup, download LocalSettings.php to the same directory as
       # this yaml and uncomment the following line and use compose to restart
       # the mediawiki service
-      # - ./LocalSettings.php:/var/www/html/LocalSettings.php
+      - ./LocalSettings.php:/var/www/html/LocalSettings.php
   database:
     image: mariadb
     restart: always
+    ports:
+      - "3306"
+    #volumes:
+    #  - /db_data:/var/lib/db
     environment:
       # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
       MYSQL_DATABASE: my_wiki
       MYSQL_USER: Admin
       MYSQL_PASSWORD: supersecret
-      MYSQL_RANDOM_ROOT_PASSWORD: yes
+      MYSQL_ROOT_PASSWORD: password 
+
+
