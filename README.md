@@ -3,7 +3,15 @@ Docker-compose configuration which launches a ​Mediawiki​ instance using Mar
 When launched, the Mediawiki instance is available at http://localhost:8000/.
 
 ## Getting Started
-...
+Ensure that the host system has directories mediawiki_data and db_data in the current directory.
+
+To launch the instance run:
+`docker-compose -f docker-compose.yml up`
+
+In your browser navigate to http://localhost:8000/.
+
+Log in using the database username and password provided in the LocalSettings.php then edit away!
+
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
