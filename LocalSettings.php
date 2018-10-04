@@ -19,8 +19,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "my_first_wiki";
-$wgMetaNamespace = "My_first_wiki";
+$wgSitename = "my_mediawiki";
+$wgMetaNamespace = "My_mediawiki";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -55,8 +55,8 @@ $wgEmailAuthentication = true;
 $wgDBtype = "mysql";
 $wgDBserver = "mediawiki-app_database_1";
 $wgDBname = "my_wiki";
-$wgDBuser = "Admin";
-$wgDBpassword = "supersecret";
+$wgDBuser = "root";
+$wgDBpassword = "password";
 
 # MySQL specific settings
 $wgDBprefix = "";
@@ -95,14 +95,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "en-gb";
 
-$wgSecretKey = "cc752a6ba0217ea341db4e4901e22148b18858f3bcbfbe4f06df49ae1c55d25d";
+$wgSecretKey = "39397c2faab25dbe1caf8dc2bf3d73ca93cbde1f83f5a564dc7139cb8acf2bc7";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "645d70d7c213cf2f";
+$wgUpgradeKey = "9624932d3d815252";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
