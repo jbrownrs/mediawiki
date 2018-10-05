@@ -12,6 +12,10 @@ In your browser navigate to http://localhost:8000/.
 
 Log in using the database username and password provided in the LocalSettings.php then edit away!
 
+## Restoring the database
+To restore the database run:
+`cat initdb.sql | docker exec -i CONTAINER /usr/bin/mysql -u Admin --password=supersecret my_wiki`
+where CONTAINER is your container ID - this can be checked using `docker ps`.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
