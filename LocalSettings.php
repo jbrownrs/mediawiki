@@ -70,9 +70,10 @@ $wgMemCachedServers = [];
 
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
-$wgEnableUploads = false;
+$wgEnableUploads = true; # default is false
 $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
+$wgFileExtensions = array('png', 'gif', 'jpg', 'jpeg', 'doc', 'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx', 'pptx', 'ps', 'psd', 'swf', 'fla', 'mp3', 'mp4', 'm4v', 'mov', 'avi');
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;
